@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Password</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="sendClave();">Enviar</button>
+    <input id="input" disabled maxlength="4" type="password">
+    <h1>Introduce tu clave</h1>
     <table>
-        <tbody id="clave">
-<!--             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>                
-            </tr>
-            <tr>
-                <td>0</td>
-                <td></td>
-            </tr>
- -->        </tbody>
+      <tbody id="clave" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();">
+        <tr>
+          <td id="n0" onclick="btnClick(0);"></td>
+          <td id="n1" onclick="btnClick(1);"></td>
+          <td id="n2" onclick="btnClick(2);"></td>
+        </tr>
+        <tr>
+          <td id="n3" onclick="btnClick(3);"></td>
+          <td id="n4" onclick="btnClick(4);"></td>
+          <td id="n5" onclick="btnClick(5);"></td>
+        </tr>
+        <tr>
+          <td id="n6" onclick="btnClick(6);"></td>
+          <td id="n7" onclick="btnClick(7);"></td>
+          <td id="n8" onclick="btnClick(8);"></td>
+        </tr>
+        <tr>
+          <td id="n9" onclick="btnClick(9);"></td>
+          <td onclick="cleanInput();" colspan="2">Borrar</td>
+        </tr>
+      </tbody>
     </table>
-</body>
-</html> 
+  </body>
+  <script src="logic.js"></script>
+</html>

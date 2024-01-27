@@ -4,10 +4,39 @@ tbody{
     color:gray;
 }
 
+td:hover{
+    cursor: pointer;
+}
+
 td{
     border: 1px solid;
     border-color: rgb(0, 0, 0);
     width: 38px;
     height: 38px;
     text-align: center;
+}
+
+table {
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+h1 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+input {
+    width: 134px;
 }
