@@ -1,7 +1,8 @@
 :root {
     --darkgreen: #00ad6a;
     --green: #1fe374;
-    --gray: #d6dae5;
+    --lightgray: #d6dae5;
+    --gray: #464951;
     --pastelgreen: #eafaf1;
     --black: #080c16;
     --white: #fcfcfc;
@@ -135,20 +136,50 @@ header nav button:hover {
     margin: 0 20rem;
 }
 
+.opinions p {
+    font-size: 1.125rem;
+    color: var(--gray);
+    line-height: 1.8rem;
+}
+
+.opinions h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.8rem;
+}
+
 hr {
-    width: 100%;
+    width: 100vw;
+    color: var(--lightgray);
+    margin: 2rem 0;
 }
 
 .card {
     display: flex;
+    margin: 5rem 0;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
+.card-main {
+    max-width: 576px;
+}
+
+.card-main h4 {
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
 
 .card-alt {
     display: flex;
+    padding: 2rem;
+    color: var(--darkgreen);
+    font-weight: 300;
+    border: 1px solid var(--lightgray);
+    background-color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -156,7 +187,119 @@ hr {
     height: 383px;
 }
 
+.card-alt p {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--gray);
+    line-height: 1.5rem;
+}
+
+.card-alt a {
+    color: var(--darkgreen);
+}
+
+.card-alt a:hover {
+    color: var(--black);
+}
+
 .card-alt img {
     width: 80px;
     height: 80px;
+}
+
+.smallbiz {
+    position: relative;
+    width: 100%;
+    padding: 8rem 5rem;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    max-width: 500px;
+}
+
+.smallbiz img {
+    position: absolute;
+    left:-25px;
+    top: 0;
+    z-index: -1;
+}
+
+.smallbiz h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.smallbiz p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.smallbiz button {
+    padding: 1rem;
+    color: var(--black);
+    background-color: var(--white);
+    font-weight: 600;
+    width: 340px;
+    height: 63px;
+    border:none;
+    font-size: 1.125rem;
+}
+
+.smallbiz button:hover {
+    cursor: pointer;
+}
+
+.infocard {
+    width: 360px;
+    height: 483px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.infoback {
+    z-index: 1;
+    width: 360px;
+    height: 515px;
+    position: absolute;
+    background-color: var(--darkgreen);
+}
+
+.maininfo {
+    position: relative;
+    z-index: 10;
+    background-color: var(--white);
+    border: 1px solid var(--lightgray);
+    width: 360px;
+    max-height: 483px;
+    padding: 2rem;
+    z-index: 100;
+}
+
+.maininfo img {
+    object-fit: contain;
+    height: 195px;
+}
+
+.maininfo:hover {
+    transform: translate(7px, -7px);
+}
+
+.maininfo h5 {
+    color: var(--gray);
+}
+
+.maininfo p {
+    color: var(--gray);
+}
+
+.maininfo div {
+    color: var(--darkgreen);
+}
+
+.about {
+    margin-top: 5.7rem;
+    padding-top: 5rem;
 }
